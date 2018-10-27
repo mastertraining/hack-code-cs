@@ -17,6 +17,7 @@
 
 * The String Calculator
 * From [Roy Osherove](http://osherove.com/tdd-kata-1)
+* The repository for this Kata can be found on [github](https://github.com/super-speed-training/kata-string-calc)
 
 ---
 
