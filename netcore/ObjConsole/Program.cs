@@ -7,6 +7,36 @@ namespace ObjConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            var order = new Order {
+                CustomerName = "John Doe",
+                OrderDate = DateTime.Now,
+                Details = new OrderDetail[] {
+                    new OrderDetail {
+                        ProductId = "123",
+                        ProductName = "Pen",
+                        Quantity = 1,
+                        UnitPrice = 50,
+                    },
+                    new OrderDetail {
+                        ProductId = "223",
+                        ProductName = "Pencil",
+                        Quantity = 12,
+                        UnitPrice = 5,
+                    },
+                },
+            };
+            foreach (var item in order.Details)
+            {
+                ReserveStock(item);
+            }
+            ShipOrder(order);
+        }
+
+        public static void ShipOrder(Order order) {}
+
+        public static void ReserveStock(OrderDetail item) {
+            // TODO: Reserve stock for an item
         }
     }
 
