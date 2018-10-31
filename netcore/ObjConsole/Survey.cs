@@ -7,7 +7,6 @@ public class HomeSample
 
 public class Residential
 {
-    
 }
 
 public class Agriculture
@@ -17,7 +16,6 @@ public class Agriculture
 
 public class Rice
 {
-    
 }
 
 public class Commercial
