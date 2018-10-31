@@ -31,9 +31,18 @@ namespace ObjConsole
                 ReserveStock(item);
             }
             ShipOrder(order);
+            IsLate(order);
+            IsLate(order.OrderDate);
         }
 
         public static void ShipOrder(Order order) {}
+
+        public static bool IsLate(Order order) {
+            throw new NotImplementedException();
+        }
+        public static bool IsLate(DateTime orderDate) {
+            throw new NotImplementedException();
+        }
 
         public static void ReserveStock(OrderDetail item) {
             // TODO: Reserve stock for an item
