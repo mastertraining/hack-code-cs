@@ -1,0 +1,15 @@
+@startuml
+Order "1" o-- "*" OrderDetail : Details >
+
+class Order {
+    CustomerName: string
+    OrderDate: DateTime
+}
+
+class OrderDetail {
+    ProductId
+    ProductName
+    Quantity
+    UnitPrice
+}
+@enduml
