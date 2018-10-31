@@ -1,0 +1,6 @@
+@startuml
+HomeSample o-- Residential
+HomeSample o-- Agriculture
+HomeSample o-- Commercial
+Agriculture o-- Rice
+@enduml
